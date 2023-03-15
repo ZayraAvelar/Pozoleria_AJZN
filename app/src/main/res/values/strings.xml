@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pozoleria</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Pozoleria</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Llamar</string>
+    <string name="previous">Previous</string>
+
+    <string name="Sucursales"><b>Suc.1:</b>  Zaragoza #213 Zona Centro, Calvillo Ags.
+        \n<b>Suc. 2:</b> Blvd. Rodolfo Landeros #150 Calvillo, Ags.
+        \n<b>Suc. 3:</b> Av.Aguascalientes Sur #436 Local 9-A Col.España,Ags.</string>
+
+    <string name="contacto"><b>Contacto:</b></string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

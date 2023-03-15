@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhatsappActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="277dp"
+                android:layout_marginTop="-20dp"
+                app:srcCompat="@drawable/pozolee"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/NuevoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/design_default_color_on_primary"
+                android:padding="10dp"
+                android:text="Nuevo Pedido"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,TextContrastCheck" />
+
+
+    <TextView
+        android:id="@+id/Cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NuevoPedido"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Cantidad de Pozoles"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/EspCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Cantidad"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Tamaño"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EspCantidad"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Tamaño de Pozole"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+    <RadioGroup
+        android:id="@+id/rGroupTamaño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tamaño"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <RadioButton
+            android:id="@+id/rbtnChico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="Chico"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RadioButton
+            android:id="@+id/Mediano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Mediano"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RadioButton
+            android:id="@+id/Grande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Grande"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/Tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rGroupTamaño"
+            android:layout_marginLeft="10dp"
+            android:text="Tipo de Pozole"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+    <RadioGroup
+        android:id="@+id/rGroupTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tipo"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <RadioButton
+            android:id="@+id/rbtnPozoleRojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="Pozole Rojo"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RadioButton
+            android:id="@+id/rbtnPozoleVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Pozole Verde"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/IngredientesExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rGroupTipo"
+            android:layout_marginLeft="10dp"
+            android:text="Ingredientes Extra"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/cbRabano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IngredientesExtra"
+            android:layout_marginLeft="10dp"
+            android:checked="false"
+            android:text="Rabano"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/cbLimon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbRabano"
+            android:layout_marginLeft="10dp"
+            android:text="Limon"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/cbCebolla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbLimon"
+            android:layout_marginLeft="10dp"
+            android:text="Cebolla"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+         <CheckBox
+            android:id="@+id/cbTostadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbCebolla"
+            android:layout_marginLeft="10dp"
+            android:text="Tostadas"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/cbRepollo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbTostadas"
+            android:layout_marginLeft="10dp"
+            android:text="Repollo"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/ConfirmarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Confirmar Pedido"
+        android:layout_below="@id/cbRepollo"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,VisualLintButtonSize" />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

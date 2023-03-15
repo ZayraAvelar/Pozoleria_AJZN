@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <ImageView
+        android:id="@+id/imgPozoleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pozoleria"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPozoleria"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/Sucursales"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInformacion"
+        android:padding="10dp"
+        android:text="@string/contacto"
+        android:textSize="16sp"
+        tools:ignore="SpUsage,TextSizeCheck" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contacto">
+
+
+        <RadioButton
+            android:id="@+id/rbtnTEL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="495 956 1635"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/rbtnTEL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="495 956 7228"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/rbtnTEL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="449 320 6501"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_llamar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next"
+        app:layout_constraintTop_toBottomOf="@id/txtInformacion"
+        tools:ignore="TextSizeCheck" />
+</RelativeLayout>
